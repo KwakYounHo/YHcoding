@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS box model알아보기</title>
+    <style>
+
+      /* 슬래시(/)별(*)내용 별(*)슬래시(/)는 CSS에서 주석이 된다*/
+
+      /* block level element (화면 전체를 쓰는 태그{element}) */
+      h1, a {
+        border: 5px solid red;
+
+        /*
+        border- 중복을 지우는 법
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+        */
+
+        /* display:inline; */
+        /* display 속성의 값으로 inline element로 바뀔 수 있음 */
+
+        /* display: none; */
+        /* 위 태그를 사용하면 화면에서 사라지게 할 수도 있다. */
+
+      }
+
+      /* inline element 자기 부피만큼 사용하는 태그{element} */
+
+      /* a의 CSS값도 h1과 중복이 되기 때문에 중복을 지우는 법
+      h1 {} CSS 문법에 콤마, 를 찍어 a도 가져다 놓는다 */
+      /* a {
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+
+        display: block;
+        display 속성의 값으로 block element로 바뀔 수 있음
+      } */
+      #Go-home {
+        font-size: 50px;
+        text-decoration: none;
+        border:none;
+        color:#5bf674;
+      }
+      </style>
+  </head>
+  <body>
+    <h1 style="padding:20px; margin:20px; display:block; width:100px;">CSS로 박스 만들기</h1>
+    <h1 style="padding:20px; margin:20px;">CSS로 박스 만들기</h1>
+    <!---
+    <h1>ex)</h1>
+    (p class="saw" id="master")<br>
+    (p class="saw" id="master")<br>
+    =X<br>
+    <br>
+    (p class="saw" id="master")<br>
+    (p class="saw king" id="queen")<Br>
+    =O<Br>
+    ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ<br>
+    ID=주민등록번호?<br>
+
+    <a href="CSS.html" target="_blank">원본 보러가기</a>
+    --->
+    <p>
+      <a href="CSS.html" target="_self" title="CSS페이지로 돌아가기" id="Go-home">CSS메모 페이지로 돌아가기</a>
+    </p>
+  </body>
+</html>
+
+
+<!--메모장
+
+1. 구글 이미지 검색에 CSS box model 검색하면 CSS의 Property의 이름이 나온다
+2. 웹페이지 오른쪽 클릭, 검사를 누르면 콘솔이 나옴

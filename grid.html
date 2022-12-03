@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid 알아보기</title>
+    <style>
+      #grid {
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      }
+      div{
+        border:5px solid gray;
+      }
+      #Go-home {
+        border:none;
+        font-size: 50px;
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--아무 의미없이 태그를 묶고 싶을 때 사용하는 태그
+      1. div
+      2. span
+      이 둘은 차이점이 있다.
+      div=블록 레벨 엘리먼트(blcok level element)
+      span=인라인 엘리먼트(inline element)-->
+    <div id="grid">
+      <div>NAVIGATION</div>
+      <div>The HyperText Markup Language or HTML is the standard markup language for documents
+        designed to be displayed in a web browser. It can be assisted by technologies such as
+        Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+      Web browsers receive HTML documents from a web server or from local storage and render
+      the documents into multimedia web pages. HTML describes the structure of a web page semantically
+      and originally included cues for the appearance of the document.</div>
+    </div>
+    <p>
+      <a href="CSS.html" target="_self" title="CSS페이지로 돌아가기" id="Go-home">CSS메모 페이지로 돌아가기</a>
+    </p>
+  </body>
+</html>
+<!--caniuse.com = css, html, JavaScript 등 현재 web브라우저에서 얼마나 많이 채택하는지 알아보는 사이트--->
